@@ -384,10 +384,23 @@ FEATURES
   transform: translateY(-4px);
 }
 
+
+
 .book__img {
-  max-height: 320px;
-  max-width: 250px;
+  /* max-height: 320px;
+  max-width: 250px; */
+  width: 100%;
+  height: 100%;
   transition: all 300ms ease;
+}
+
+.book__img--wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  height: 300px;
+  max-width: 250px;
 }
 
 .book__img--skeleton {
@@ -422,12 +435,7 @@ FEATURES
   color: #242424;
 }
 
-.book__img--wrapper {
-  margin-bottom: 8px;
-  border-radius: 4px;
-  overflow: hidden;
-  display: flex;
-}
+
 
 .book__title {
   font-size: 20px;
@@ -670,12 +678,14 @@ select {
 .cart__book {
   width: 60%;
   display: flex;
+  font-size: 18px;
 }
 
 .cart__quantity {
   width: 40%;
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 
 .cart__total {
@@ -789,6 +799,7 @@ select {
 
   .book {
     width: 50%;
+
   }
 
   .book__selected {
@@ -821,6 +832,7 @@ select {
   .highlight:not(:last-child) {
     margin-bottom: 24px;
   }
+
 
   .cart__book--img {
     display: none;
