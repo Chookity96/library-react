@@ -22,7 +22,7 @@ body {
 }
 
 nav {
-  height: 80px;
+  height: 74px;
   display: flex;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
   background-color: white;
@@ -230,7 +230,7 @@ LANDING
 }
 
 header {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 74px);
 }
 
 .header__container {
@@ -247,6 +247,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 16px;
 }
 
 .header__img--wrapper {
@@ -260,7 +261,6 @@ header {
   make landing page responsive on laptops */
   max-height: 40vh;
 }
-
 
 .container {
   padding: 56px 0;
@@ -389,6 +389,7 @@ FEATURES
 .book__img {
   /* max-height: 320px;
   max-width: 250px; */
+  object-fit: cover;
   width: 100%;
   height: 100%;
   transition: all 300ms ease;
@@ -839,5 +840,16 @@ select {
   }
   .cart__book--info {
     padding-left: 0;
+  }
+
+  h1{
+    font-size: 36px;
+  }
+}
+
+
+@media (max-width: 490px) {
+  h1{
+    font-size: 32px;
   }
 }
