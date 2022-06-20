@@ -1,5 +1,5 @@
 import React from 'react';
-import EmptyCart from "../assets/empty_cart.svg";
+import EmptyCart from "../assets/undraw_empty_cart.svg";
 import { Link } from 'react-router-dom';
 
 const Cart = ({ cart, changeQuantity, removeItem }) => {
@@ -100,7 +100,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                                 <span>${total()}</span>
                             </div>
                             <button className="btn btn__checkout no-cursor"
-                                onClick={() => alert("Haven't got around to doing this :(")}>
+                                onClick={() => alert("Payment function not available. Please contact owner directly to place orders. Contact No: +65 8*** ****")}>
                                 Proceed to checkout
                             </button>
                         </div>

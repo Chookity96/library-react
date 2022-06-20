@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import UndrawBooks from '../assets/Undraw_Books.svg';
+import UndrawBooks from '../assets/undraw_creative_woman.svg';
 
 const Landing = () => {
     return (

@@ -7,6 +7,8 @@ import BookInfo from "./pages/BookInfo";
 import { books } from "./data";
 import Cart from "./pages/Cart";
 import { useEffect, useState } from "react";
+import {useLocation} from 'react-router'
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
@@ -47,10 +49,14 @@ function App() {
     <Router>
       <div className="App">
         <Nav numberOfItems={numberOfItems}></Nav>
+        <ScrollToTop>
+
+        
         <Route path="/" exact component={Home}></Route>
         <Route path="/books" exact render={() => <Books books={books}></Books>}></Route>
         <Route path="/books/:id" exact render={() => <BookInfo books={books} addToCart={addToCart} cart={cart}></BookInfo>} ></Route>
         <Route path="/cart" exact render={() => <Cart books={books} cart={cart} changeQuantity={changeQuantity} removeItem={removeItem}></Cart>}></Route>
+        </ScrollToTop>
         <Footer></Footer>
       </div>
     </Router>
