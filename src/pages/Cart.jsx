@@ -100,7 +100,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                                 <span>${total()}</span>
                             </div>
                             <button className="btn btn__checkout no-cursor"
-                                onClick={() => alert("Payment function not available. Please contact owner directly to place orders. Contact No: +65 8*** ****")}>
+                                onClick={() => alert("Payment function currently unavailable. Please contact owner directly to place orders. Contact No: +65 8*** ****")}>
                                 Proceed to checkout
                             </button>
                         </div>
